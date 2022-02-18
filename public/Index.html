@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- <link rel="stylesheet" href="style.css?v=<?php echo time(); ?>"> -->
+  <!-- <link href="style.css" rel="stylesheet" type="text/css"/> -->
+  <link rel="stylesheet" href="Nav.css">
+  <link rel="stylesheet" href="Main.css">
+  <link rel="stylesheet" href="Modal.css">
+</head>
+
+<body id="scroll">
+
+  <div id="overlay" onclick="off()">
+    <div id="text">Vous êtes à la recherche d'un apprenti ?</div>
+    <div id="overlay_right"></div>
+    <div id="overlay_left"></div>
+  </div>
+
+  <div id="parallax">
+    <div id="presentation"></div>
+  </div>
+
+  <div id="myProgress">
+    <div id="myBar"></div>
+  </div>
+
+  <div class="topnav" id="myTopnav">
+    <div class="prog_container">
+      <div class="nav_prog" id="my_prog"></div>
+    </div>
+
+    <div>
+      <a href="javascript:void(0);" class="icon" onclick="openNav()">
+        <div class="burger_icon"></div>
+        <div class="burger_icon"></div>
+        <div class="burger_icon"></div>
+      </a>
+
+      <h3 href="#Profil" class="Name">Chandler NGUYEN</h3>
+      <div class="topnav-centered">
+        <a href="#Parcours">Parcours</a>
+        <a href="#Compétences">Compétences</a>
+        <a href="#Travaux">Travaux</a>
+        <a href="#Contact">Contact</a>
+      </div>
+
+      <img class="nav_img" src="[Data]\LOGO\Logo_Ynov.png" alt="">
+    </div>
+  </div>
+
+  <div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="#parallax">Qui suis-je ?</a>
+    <a href="#Parcours">Parcours</a>
+    <a href="#Compétences">Compétences</a>
+    <a href="#Travaux">Travaux</a>
+    <a href="#Contact">Contact</a>
+    <div class="links">
+      <a href="https://www.linkedin.com/in/chandler-nguyen-545a14160/" target="_blank">
+        <img class="logo_contact_side" src="[Data]\LOGO\Linkedin.png" alt="">
+      </a>
+      <a href="https://github.com/" target="_blank">
+        <img class="logo_contact_side" src="[Data]\LOGO\Github.png" alt="">
+      </a>
+    </div>
+  </div>
+
+  <a href="#parallax">
+    <img class="Arrow" src="[Data]\Arrow.png" alt="">
+  </a>
+
+  <main>
+    <div class="trans" id="Parcours"></div>
+    <section class="wrapper">
+      <h1 class="Main_Title">Parcours</h1>
+      <h2 class="Side_Title">Une preuve de polyvalence</h2>
+
+      <div class="timeline">
+        <div class="container left">
+          <div class="content">
+            <h2>2020/2021</h2>
+            <h3>Étudiant en première année de Bachelor Informatique Ingésup</h3>
+            <h2>Sophia Ynov Campus</h2>
+            <h4>SOPHIA ANTIPOLIS</h4>
+          </div>
+        </div>
+        <div class="container right">
+          <div class="content">
+            <h2>2018/2020</h2>
+            <h3>Étudiant en Alternance de BTS CPI (Conception de Produits Industriels)</h3>
+            <h2>Lycée Couffignal</h2>
+            <h4>STRASBOURG</h4>
+          </div>
+          <div class="content">
+            <h3>Apprentie Concepteur Industriel en bureau d'ingénierie</h3>
+            <h2>CICAL SA</h2>
+            <h4>REICHSTETT</h4>
+          </div>
+        </div>
+        <div class="container left">
+          <div class="content">
+            <h2>2016/2018</h2>
+            <h3>Étudiant de BAC STI2D Spécialité SIN (Système Informatique et Numérique)</h3>
+            <h2>Lycée Marc Bloch</h2>
+            <h4>STRASBOURG</h4>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="trans" id="Compétences"></div>  <!--revoir id-->
+    <section class="wrapper">
+      <h1 class="Main_Title">Compétences</h1>
+      <h2 class="Side_Title">Impatient de les développer à vos côtés</h2>
+
+      <div>
+        <p class="langage">C</p>
+        <div class="skills_container">
+          <div class="skills" id="c">95%</div>
+        </div>
+        <p class="langage">HTML - CSS - JavaScript</p>
+        <div class="skills_container">
+          <div class="skills" id="web">90%</div>
+        </div>
+        <p class="langage" id="skills_all">PHP</p>
+        <div class="skills_container">
+          <div class="skills" id="php">85%</div>
+        </div>
+        <div id="ntm"></div>
+      </div>
+    </section>
+
+    <div class="trans" id="Travaux"></div>
+    <section class="wrapper">
+      <h1 class="Main_Title">Travaux</h1>
+      <h2 class="Side_Title">Un aperçu de mes compétences</h2>
+      <article class="Travaux">
+
+        <div class="projet_img">
+          <img onclick="img(0)" onmouseover="description(0)" src="[Data]\Travaux\GIT.png" alt="">
+          <div class="cadre_projet">Mon Git</div>
+          <!-- <img id="prj_03" onmouseout="description_out()" src="[Data]\Travaux\C.png" alt=""> -->
+          <!-- <p id="prj_03" class="projet_des">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus repudiandae exercitationem tenetur voluptates, accusantium excepturi, aliquam quasi libero sequi unde, a reprehenderit quod quae consequatur iusto perferendis inventore dolore quo.</p> -->
+        </div>
+        <section id="git" class="modal">
+          <article class="modal-content">
+            <div class="modal-header">
+              <span class="close">&times;</span>
+              <h2>Mon Git</h2>
+            </div>
+            <div class="modal-body">
+              <p>Retrouver tous mes projets à cette adresse :
+                <a href="https://github.com/" target="_blank">https://github.com/</a>
+              </p>
+              <!-- <a href="https://github.com/" target="_blank">https://github.com/</a> -->
+            </div>
+            <div class="modal-footer">
+              <!-- <h3>Modal Footer</h3> -->
+            </div>
+          </article>
+        </section>
+
+        <div class="projet_img">
+          <img onclick="img(1)" onmouseover="description(1)" src="[Data]\Travaux\PRISON.jpg" alt="">
+          <div class="cadre_projet">The PRISON</div>
+        </div>
+        <section id="the_prison" class="modal">
+          <article class="modal-content">
+            <div class="modal-header">
+              <span class="close">&times;</span>
+              <h2>THE PRISON</h2>
+            </div>
+            <div class="modal-body">
+              <p>Some text in the Modal Body</p>
+              <p>Some other text...</p>
+            </div>
+            <div class="modal-footer">
+              <h3>Compétences utilisés : Langage C</h3>
+            </div>
+          </article>
+        </section>
+
+        <div class="projet_img">
+          <img onclick="img(2)" onmouseover="description(2)" src="[Data]\Travaux\DESSINATOR.png" alt="">
+          <div class="cadre_projet">Dessinator</div>
+        </div>
+        <section id="dessinator" class="modal">
+          <article class="modal-content">
+            <div class="modal-header">
+              <span class="close">&times;</span>
+              <h2>Projet Dessinator</h2>
+            </div>
+            <div class="modal-body">
+              <p>Some text in the Modal Body</p>
+              <p>Some other text...</p>
+            </div>
+            <div class="modal-footer">
+              <h3>Compétences utilisés : Langage C</h3>
+            </div>
+          </article>
+        </section>
+
+        <div class="projet_img" id="fantome"></div>
+
+        <div class="projet_img" id="test_php">
+          <img onclick="img(3)" onmouseover="description(3)" src="[Data]\Travaux\PORTFOLIO.jpg" alt="">
+          <div class="cadre_projet">Portfolio dynamique</div>
+        </div>
+        <section id="portfolio_php" class="modal">
+          <article class="modal-content">
+            <div class="modal-header">
+              <span class="close">&times;</span>
+              <h2>Dynamisation du Portfolio</h2>
+            </div>
+            <div class="modal-body">
+              <p>Some text in the Modal Body</p>
+              <p>Some other text...</p>
+            </div>
+            <div class="modal-footer">
+              <h3>Compétences utilisés : PHP (HTML | CSS | JS)</h3>
+            </div>
+          </article>
+        </section>
+
+      </article>
+    </section>
+
+    <div class="trans"></div>
+    
+  </main>
+  
+  <!-- <div class="trans_foot"></div> -->
+  
+  <footer id="Contact">
+    <h2 class="Side_Title">Contact</h2>
+    <section class="Contact_1">
+      <div class="Contact_1">
+        <div class="art1">
+          <textarea name="Entreprise" id="Entreprise" cols="30" rows="1" placeholder="Entreprise"></textarea><br>
+          <textarea name="Nom" id="Nom" cols="30" rows="1" placeholder="Nom"></textarea><br>
+          <textarea name="Prénom" id="Prénom" cols="30" rows="1" placeholder="Prénom"></textarea><br>
+          <textarea name="Email" id="Email" cols="30" rows="1" placeholder="Email"></textarea><br>
+          <textarea name="Sujet" id="Sujet" cols="30" rows="1" placeholder="Sujet"></textarea>
+        </div>
+        <div class="art2">
+          <textarea name="Message" id="Message" cols="30" rows="10" placeholder="Message"></textarea>
+          <button>Envoyer</button>
+        </div>
+      </div>
+    </section>
+    <div>
+      <a href="https://www.linkedin.com/in/chandler-nguyen-545a14160/" target="_blank">
+        <img class="logo_contact" src="[Data]\LOGO\Linkedin.png" alt="">
+      </a>
+      <a href="https://github.com/" target="_blank">
+        <img class="logo_contact" src="[Data]\LOGO\Github.png" alt="">
+      </a>
+    </div>
+  </footer>
+
+</body>
+
+<script src="Script.js" type="text/javascript"></script>
+
+</html>

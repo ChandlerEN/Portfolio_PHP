@@ -1,0 +1,310 @@
+html {
+    scroll-behavior: smooth;
+    height: 100%;
+    font-family: Square;
+    /* font-family: conthrax-sb; */
+    /* font-family: Doland; */
+    /* font-family: Cubest; */
+}
+
+@font-face {
+    font-family: Square;
+    src: url('Square.ttf');
+    
+    /* font-family: conthrax-sb;
+    src: url('conthrax-sb.ttf'); */
+
+    /* font-family: Doland;
+    src: url('Doland-Regular.otf'); */
+
+    /* font-family: Cubest;
+    src: url('Cubest-Light.otf'); */
+
+} 
+
+/* #scroll{
+    scrollbar-width: 0;
+} */
+
+/*--------------------BODY-------------------------------------------------------------------*/
+
+body {
+    /* font-family: Arial, Helvetica, sans-serif; */
+    height: 100%;
+    mix-blend-mode: overlay;
+    /* background-color: white; */
+    /* background-color: rgba(0, 0, 0, 0); */
+    margin: 0;
+    overflow: hidden;
+}
+
+#parallax {
+    background-image: url("../../[Data]/BG_03.jpg");
+    /*[Data]\BG_03.png*/
+    /* min-height: 500px; */
+    height: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.wrapper {
+    max-width: 90vw;
+    margin: auto;
+    overflow: hidden;
+    /* text-align: center; */
+    /* background-color: white; */
+    /* background-color: rgba(0, 0, 0, 0.5); */
+    /* background-color: gray; */
+}
+
+main {
+    width: 100%;
+    background: -webkit-linear-gradient(left, #7577FA 20px, transparent 1%) center, -webkit-linear-gradient(#7577FA 20px, transparent 1%) center, #9192FB;
+    background: linear-gradient(90deg, #023047 20px, transparent 1%) center, linear-gradient(#023047 20px, transparent 1%) center, #9192FB;
+    background-size: 22px 22px;
+    /* overflow: hidden; */
+    /* background-color: violet; */
+    /* background-image: url("BG_03.png"); */
+    /* min-height: 500px; */
+    /* height: 100%; */
+    /* background-color: rgba(0, 0, 0, 0.3); */
+    /* background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; */
+}
+
+.Arrow {
+    height: 50px;
+    width: auto;
+    position: fixed;
+    left: 95%;
+    bottom: 5%;
+    cursor: pointer;
+    z-index: 100;
+}
+
+/*--------------------HEADER-----------------------------------------------------------------*/
+
+/*--------------------CHARGING BAR--------------------*/
+
+#myProgress {
+    width: 100%;
+    background-color: black;
+    position: absolute;
+    top: 50%;
+    /* opacity: 100; */
+    z-index: 100;
+}
+
+#myBar {
+    width: 0%;
+    height: 5px;
+    background-color: white;
+    /* top: 50%; */
+    /* opacity: 0.6; */
+}
+
+/*--------------------OVERLAY--------------------*/
+
+#overlay {
+    position: fixed;
+    display: block;
+    width: 100%;
+    height: 100%;
+    /* top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0; */
+    background-color: rgba(0, 0, 0);
+    z-index: 2;
+    cursor: none;
+    pointer-events: none;
+    transition: 1s;
+    /* opacity: 1; */
+}
+
+#overlay_right {
+    position: fixed;
+    display: block;
+    width: 50%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    z-index: 2;
+    /* cursor: pointer; */
+    transition: 1s;
+}
+
+#overlay_left {
+    position: fixed;
+    display: block;
+    width: 50%;
+    height: 100%;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.9);
+    z-index: 2;
+    /* cursor: pointer; */
+    transition: 1s;
+}
+
+#text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 50px;
+    color: white;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+    transition: 1s;
+    opacity: 0;
+    /* z-index: 0; */
+}
+
+/*--------------------PRESENTATION--------------------*/
+
+#presentation {
+    /* background-color: white; */
+    width: 85%;
+    /* background-color: rgba(2, 2, 2); */
+    color: white;
+    font-size: 5vw;
+    font-weight: bold;
+    /* margin: 0 auto; */
+    /* padding: 10px; */
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* mix-blend-mode:saturation; */
+}
+
+/*--------------------MAIN-------------------------------------------------------------------*/
+
+.Main_Title {
+    text-align: center;
+    color: white;
+    font-size: 6vw;
+    margin: 0;
+}
+
+.Side_Title {
+    text-align: left;
+    color: white;
+    font-size: 3vw;
+    text-align: center;
+    margin-bottom: 5%;
+    /* margin-left: 20%; */
+}
+
+.trans {
+    height: 30vh;
+    /* background-color: rgba(105, 105, 105, 0); */
+    opacity: 0.1;
+    margin: 0;
+    background-image: url("BG_03.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* border-radius: 10%; */
+}
+
+/* .trans_foot {
+    height: 30vh;
+    background-color: rgba(105, 105, 105, 0.8);
+    margin: 0;
+    display: none;
+} */
+
+/*-------------------------------------------------------*/
+
+.Text {
+    text-align: center;
+    max-width: 50em;
+    float: left;
+}
+
+/*--------------------FOOTER-----------------------------------------------------------------*/
+
+footer {
+    /* width: 100%; */
+    /* height: auto; */
+    background-color: #1b2e3d;
+    overflow: hidden;
+    /* position:fixed; */
+    /* float: none; */
+    /* display: block; */
+}
+
+footer h1 {
+    color: white;
+    text-align: center;
+}
+
+.Contact_1 {
+    display: flex;
+    margin: 0 auto;
+}
+
+.Contact_1 textarea {
+    /* width: 200px; */
+    resize: none;
+    margin-bottom: 2%;
+}
+
+.art1 {
+    width: 100%;
+}
+
+.art2 {
+    width: 100%;
+}
+
+.art1 textarea {
+    height: 10%;
+}
+
+.art2 textarea {
+    width: 100%;
+    height: 65%;
+    /* border-radius:2%; */
+}
+
+.art2 button {
+    width: 102%;
+    height: 13%;
+}
+
+@media screen and (max-width: 455px) {
+    .Contact_1 {
+        display: block;
+        text-align: center;
+        /* margin: 0 auto; */
+    }
+    .art2 textarea {
+        width: 70%;
+    }
+    .art2 button {
+        width: 71%;
+        margin-bottom: 5%;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .Main_Title {
+        font-size: 9vw;
+    }
+    .Side_Title {
+        font-size: 4vw;
+    }
+    .Arrow {
+        display: none;
+    }
+    /* .trans_foot{
+        display: block;
+    } */
+}
